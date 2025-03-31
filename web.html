@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Center</title>
+
+    <!-- ใช้ Google Fonts สำหรับฟอนต์สไตล์หรู -->
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: #121212;
+            color: #f4f4f9;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #7a3f8d;
+            color: #fff;
+            text-align: center;
+            padding: 50px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 40px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .game-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 40px;
+        }
+
+        .game-item {
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .game-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .game-item-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .game-item h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: #7a3f8d;
+        }
+
+        .game-item a {
+            display: inline-block;
+            background-color: #7a3f8d;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 16px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease;
+        }
+
+        .game-item a:hover {
+            background-color: #6b2e7d;
+        }
+
+        .game-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #1e1e1e;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome To Game Center</h1>
+    </header>
+
+    <div class="game-list">
+        <div class="game-item">
+            <div class="game-item-content">
+                <h3>เกม 1</h3>
+                <a href="https://roblox.com" target="_blank">เล่นเกม</a>
+            </div>
+        </div>
+        <div class="game-item">
+               <div class="game-item-content">
+                <h3>เกม 2</h3>
+                <a href="https://og999.co" target="_blank">เล่นเกม</a>
+            </div>
+        </div>
+        <div class="game-item">
+           <div class="game-item-content">
+                <h3>เกม 3</h3>
+                <a href="https://game3.com" target="_blank">เล่นเกม</a>
+            </div>
+        </div>
+        <!-- เพิ่มเกมได้ตามต้องการ -->
+    </div>
+
+    <footer>
+        <p>&copy; BY Nigga os</p>
+    </footer>
+
+</body>
+</html>
